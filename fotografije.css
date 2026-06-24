@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.vina-sans-regular {
+  font-family: "Vina Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+body {
+  background: #efd4dd;
+  display: grid;
+  height: 100vh;
+  font-family: "Vina Sans", sans-serif;
+  background-image: url("pozadina2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+.side-title {
+  position: fixed;
+  left: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  font-size: 12rem;
+  color: #9c9f69;
+  opacity: 1;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 12vh 10vw;
+  grid-column-gap: 2vw;
+  grid-row-gap: 1.5vw;
+}
+
+.projekat img {
+  width: 100%;
+  height: 100vh
+}
+
+.title {
+  position: absolute;
+  top: 230px;            
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 138px;
+  color: #9c9f69;
+  font-weight: normal;
+  white-space: nowrap;
+  font-family: "Vina Sans", sans-serif;
+}
+
+
+.tagline {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "Vina Sans", sans-serif;
+  color: #9c9f69;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: #e6b1c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}

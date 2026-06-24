@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.vina-sans-regular {
+  font-family: "Vina Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background: #efd4dd;
+  display: grid;
+  height: 100vh;
+  font-family: "Vina Sans", sans-serif;
+  background-image: url("pozadina2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    padding: 2vw;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    font-size: clamp(60px, 7vw, 120px);
+    color: #9c9f69;
+    font-weight: normal;
+}
+
+.center {
+    flex: 0 1 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 25px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.box {
+    padding: auto;
+}
+
+.text-left {
+    max-width: 400px;
+    font-size: clamp(20px, 2vw, 45px);
+    text-align: left;
+    color: #c7a39b;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.text-right {
+    max-width: 460px;
+    font-size: clamp(20px, 2vw, 45px);
+    text-align: right;
+    color: #c7a39b;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+@media (max-width: 1400px) {
+    .page {
+        gap: 20px;
+    }
+}
+
+.tagline {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-family: "Vina Sans", sans-serif;
+  color: #9c9f69;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 48px;
+  background: #e6b1c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: monospace;
+  letter-spacing: 1px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
